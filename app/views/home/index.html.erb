@@ -6,3 +6,13 @@
   <source src="horse.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+
+<video id="myVideo"> <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4; codecs="avc1, mp4a"'> <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg; codecs="theora, vorbis"'> Your user agent does not support the HTML5 Video element. </video> <button type="button" onclick="vid_play_pause()">Play/Pause</button> <script> function vid_play_pause() { var myVideo = document.getElementById("myVideo"); if (myVideo.paused) { myVideo.play(); } else { myVideo.pause(); } } </script>
+
+<audio src=”http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4” controls=”controls”> </audio>
+
+<embed src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" controls>
+
+<audio src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" controls>
+Your browser does not support the audio element.
+</audio>
