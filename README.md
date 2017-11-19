@@ -1,5 +1,13 @@
 Kakao audio test 
 
+https://reverseengineering.stackexchange.com/questions/2331/how-do-i-get-the-location-of-the-original-audio-video-file-embedded-on-a-webpage
+
+http://manee-mx.com/index.php/archives/1379
+
+https://msdn.microsoft.com/ko-kr/library/gg589489(v=vs.85).aspx
+
+interval stream 
+https://stackoverflow.com/questions/5932412/html5-audio-how-to-play-only-a-selected-portion-of-an-audio-file-audio-sprite
 
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'

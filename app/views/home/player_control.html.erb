@@ -1,0 +1,30 @@
+<audio id="sample" src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"></audio>
+
+<a href="javascript:play1();">Play1</a>
+<a href="javascript:play2();">Play2</a>
+<a href="javascript:pauseAudio();">Pause</a>
+
+<script>
+var audio = document.getElementById('click');
+
+function play1(){
+    audio.currentTime = 0;
+    audio.play();
+
+    // This is the problem area
+    audio.addEventListener('timeupdate', function (){
+        if (currentTime >= 0.5) {
+            audio.pause();
+        }
+    }, false);
+}   
+
+function play2(){
+    audio.currentTime = 0.5;
+    audio.play();
+}
+
+function pause(){
+    audio.pause();
+}
+</script>
