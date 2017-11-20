@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Audio player</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
-  <script type="text/javascript">
-
-    function vidplay() {
-       var video = document.getElementById("Video1");
-       var button = document.getElementById("play");
-       if (video.paused) {
-          video.play();
-          button.textContent = "||";
-       } else {
-          video.pause();
-          button.textContent = ">";
-       }
-    }
-
-    function restart() {
-        var video = document.getElementById("Video1");
-        video.currentTime = 0;
-    }
-
-    function skip(value) {
-        var video = document.getElementById("Video1");
-        video.currentTime += value;
-    }      
-</script>
-  
-  
-  
+    <!-- Jquery 임포트-->
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <style>
+        div {
+            margin: 10px 0;
+        }
+        .section-divider{
+            margin: 50px 0;
+        }
+        .share-btn {
+            width:50px;
+        }
+        .share-btns{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
