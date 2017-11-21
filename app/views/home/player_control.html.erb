@@ -1,6 +1,16 @@
 <h1>네이버 핵데이 - 오디오 구간 공유</h1>
 <div class="section-divider">
     <div>
+        <audio src="<%= audio_path 'pikaboo.mp3'%>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div>
+        <audio src="<%= audio_path 'Watch.wav'%>" type="audio/mpeg" controls>
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div>
         <audio controls="controls" id="myAudio" autoplay>
             <source src="../voice_data/sentence.ogg" type="audio/ogg" />
             <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mpeg" />
@@ -8,7 +18,7 @@
         </audio>
     </div>
     <div>
-        <button onclick="aud_play_pause()">Play</button>
+        <button onclick="aud_play_pause()">Play</button> 
         <button onclick="get_time()" id="get_time_btn">Get Start Play Time</button>
     </div>
     <div>

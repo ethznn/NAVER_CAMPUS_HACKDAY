@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "home#index"
-  get "home/player_control" => "home#player_control"
+  get "/player_control" => "home#player_control"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
